@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dice Game</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <h1>🎲 Dice Game</h1>
+
+  <div id="nameForm">
+    <h3>Enter player names:</h3>
+    <form id="playerForm">
+      <input type="text" placeholder="Player 1" required>
+      <input type="text" placeholder="Player 2" required>
+      <input type="text" placeholder="Player 3" required>
+      <input type="text" placeholder="Player 4" required>
+      <br><br>
+      <button type="submit">Start Game</button>
+    </form>
+  </div>
+
+  <div id="gameArea" style="display:none;">
+    <div class="grid" id="diceGrid"></div>
+    <p id="status"></p>
+    <button id="resetBtn">🔄 Restart Game</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
